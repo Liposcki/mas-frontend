@@ -66,6 +66,12 @@ export const FormContainer = styled.div`
   }
 `;
 
+export const Error = styled.span`
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: coral;
+`
+
 export const InputContainer = styled.div`
     background: #ffffff;
     border-radius: 10px;

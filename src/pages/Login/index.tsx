@@ -38,7 +38,7 @@ export function Login(){
                                 {...register("password", {required:true})}
                             />
                         </InputContainer>
-                        {errors.email && <Error>O preenchimento do campo é obrigatório</Error>}
+                        {errors.password && <Error>O preenchimento do campo é obrigatório</Error>}
                         <Button type="submit">Entrar</Button>
                     </form>
                     <Link to="/register">

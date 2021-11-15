@@ -1,4 +1,6 @@
 import {Container, Content} from "./styles";
+import { FiLogOut } from 'react-icons/fi';
+import { useAuth } from '../../hooks/Auth'
 
 interface HeaderProps {
     onOpenNewActivyModal: () => void;
@@ -6,6 +8,13 @@ interface HeaderProps {
 }
 
 export function Header({onOpenNewActivyModal, onOpenNewCourseUnitModal}:HeaderProps){
+
+    const {signOut} = useAuth();
+
+    function handleSignOut(){
+        signOut();
+    }
+
     return(
         <Container>
             <Content>
@@ -22,6 +31,12 @@ export function Header({onOpenNewActivyModal, onOpenNewCourseUnitModal}:HeaderPr
                         onClick={onOpenNewActivyModal}
                     >
                         Nova Atividade
+                    </button>
+                    <button
+                        type="button"
+                        onClick={handleSignOut}
+                    >
+                        <FiLogOut size={20}/>
                     </button>
                 </div>
             </Content>

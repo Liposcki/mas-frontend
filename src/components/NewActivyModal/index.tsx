@@ -15,6 +15,7 @@ interface NewActivyModalData {
     name: string;
     activy: string;
     date: Date;
+    grade: number;
 }
 
 interface CourseUnit {

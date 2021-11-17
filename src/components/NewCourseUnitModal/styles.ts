@@ -1,7 +1,8 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
-    h2 {
+
+   h2 {
         color: var(--text-title);
         font-size: 1.5rem;
         margin-bottom: 2rem;
@@ -43,7 +44,7 @@ export const Container = styled.div`
         &:hover {
             filter: brightness(0.8);
         }
-    }
+    } 
 `;
 
 export const Error = styled.span`
